@@ -8,6 +8,11 @@
             body {
                 background-color: lavenderblush;
             }
+            h1 {
+                font-size: 25px;
+                color:rgb(231, 114, 150);
+                font-weight: 900;
+            }
         </style>
     </head>
     <body>
@@ -20,14 +25,15 @@
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
+                        <h1>Taima koira</h1>
                         <h5 class="card-title" id="title"></h5>
                         <div class="card">
                             <div class="card-body" id="thought"></div>
                         </div>
                         <br>
-                        <button type="button" class="btn btn-outline-dark">👋 Rapsuta</button>
-                        <button type="button" class="btn btn-outline-dark">🦴 Anna nami</button>
-                        <button type="button" class="btn btn-outline-dark">🧸 Leiki</button>
+                        <button onclick="scratchButtonClicked()" type="button" class="btn btn-outline-dark">👋 Rapsuta</button>
+                        <button onclick="treatButtonClicked()" type="button" class="btn btn-outline-dark">🦴 Anna nami</button>
+                        <button onclick="playButtonClicked()" type="button" class="btn btn-outline-dark">🧸 Leiki</button>
                     </div>
                     </div>
                 </div>
