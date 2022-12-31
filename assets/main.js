@@ -18,8 +18,8 @@ var treatThoughts = [
 ];
 
 var playThoughts = [
-    "squeeeek t. paprika",
-    "heitä lelu, mutta älä ota sitä minulta",
+    "iiik t. tipu",
+    "voisitko heittää tätä?",
     "grrr, grrr"
 ];
 
@@ -45,19 +45,27 @@ function newThought(clickThought) {
     thoughtBox.innerHTML = "💭 " + thought;
 }
 
+function switchImage(imageName) {
+    var image = document.getElementById("picture");
+    image.src = "/assets/images/" + imageName + ".jpg";
+}
+
 function scratchButtonClicked() {
     var thought = scratchThoughts[getRandomInt(0, scratchThoughts.length - 1)];
     newThought(thought);
+    switchImage("scratch");
 }
 
 function treatButtonClicked() {
     var thought = treatThoughts[getRandomInt(0, treatThoughts.length - 1)];
     newThought(thought);
+    switchImage("treat");
 }
 
 function playButtonClicked() {
     var thought = playThoughts[getRandomInt(0, playThoughts.length - 1)];
     newThought(thought);
+    switchImage("play");
 }
 
 newWoof();
